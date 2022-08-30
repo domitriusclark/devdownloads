@@ -1,3 +1,37 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
+
+body {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-style: normal
+}
+
+button {
+  font-family: 'Pacaembu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.heading-text {
+  color: #9ba5b6;
+}
+
+.bg-gradient-pink-orange,
+.hover\:bg-gradient-pink-orange:hover,
+.hover\:bg-gradient-pink-orange:focus {
+  background: #E7017A linear-gradient(91.78deg, #E7017A 2.57%, #DF4A1F 96.33%);
+}
+
+.bg-border-gradient-pink-orange {
+  @apply bg-gradient-to-r p-[6px] from-pink to-orange ;
+}
+
+.bg-gradient-blue-purple,
+.hover\:bg-gradient-blue-purple:hover,
+.hover\:bg-gradient-blue-purple:focus {
+  background: linear-gradient(30.7deg, #100071 -3.51%, #A400BE 105.17%);
+}
