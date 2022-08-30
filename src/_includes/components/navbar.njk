@@ -1,15 +1,9 @@
-{% set linkList = [
-  {
-    'text': 'Home',
-    'url': '/'
-  }
-] %}
-
-<nav class="h-10 w-full">
-  <ul class="flex p-7 gap-4 under items-center w-full h-full bg-neutral-800 text-gray-300 ">
-    {% for link in linkList %}
-      <li class="hover:text-purple-600">
-        <a class="{{ 'underline underline-offset-2' if link.url === page.url }}" href="{{ link.url }}">{{ link.text }}</a>
-      </li>
-    {% endfor %}
+<nav class="h-20 w-full">
+  <ul class="flex p-7 items-center justify-between w-full h-full bg-primary text-gray-300 mt-20">
+    <a href="/">
+      <img src="/img/dd_logo.png"/>
+    </a>
+    <button class="bg-discord-blue p-2 rounded-xl">
+      Join the Discord
+    </button>
   </ul>
