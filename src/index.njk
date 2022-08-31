@@ -4,7 +4,14 @@ layout: layouts/base.njk
 ---
 
 {% for episode in episodes %}
-  <div class="rounded-xl w-full h-[480px] mx-auto bg-border-gradient-pink-orange mt-12">
-    <div class="flex flex-col justify-between h-full bg-primary-blue text-white rounded-lg p-4">{{ episode.name }}</div>
-  </div>
+  {% if episode.up_next === true %}
+    <div class="rounded-xl w-full h-[480px] mx-auto bg-border-gradient-pink-orange mt-12">
+      <div class="flex flex-col justify-between h-full bg-primary-blue text-white rounded-lg p-4">
+        <img src={{ episode.photo }}/>
+        <h1>{{ episode.name }}</h1>
+        <p>{{ episode.title }}</p>
+        <p>{{ episode.topic }}</p>
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}
