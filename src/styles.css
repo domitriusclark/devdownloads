@@ -27,7 +27,7 @@ button {
 }
 
 .bg-border-gradient-pink-orange {
-  @apply bg-gradient-to-r p-[18px] from-pink to-orange ;
+  @apply bg-gradient-to-r from-pink to-orange ;
 }
 
 .bg-gradient-blue-purple,
