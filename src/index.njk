@@ -5,12 +5,18 @@ layout: layouts/base.njk
 
 {% for episode in episodes %}
   {% if episode.up_next === true %}
-    <div class="rounded-xl w-full h-[480px] mx-auto bg-border-gradient-pink-orange p-[18px] mt-12">
-      <div class="flex flex-col justify-between h-full bg-primary-blue text-white rounded-lg p-4">
-        <img src={{ episode.photo }}/>
-        <h1>{{ episode.name }}</h1>
-        <p>{{ episode.title }}</p>
-        <p>{{ episode.topic }}</p>
+    <div class="rounded-xl w-full h-[480px] mx-auto bg-border-gradient-pink-orange p-[18px] mt-12 overflow-hidden">
+      <div class="wrapper">
+        <div class="left flex-col pr-[10%]">
+          <p>{{ episode.topic }}</p>
+          <p>{{ episode.when }}</p>
+        </div>
+        <div class="right flex-col pl-[25%]">
+          <img class="rounded-full w-[40%]" src="{{ episode.photo | removeTrailingSlash }}"/>
+          <h1 class="bg-pink px-12 py-3 mt-[-32px]">{{ episode.name }}</h1>
+          <p class="">{{ episode.title }}</p>
+          <p>{{episode.twitter}}</p>
+        </div>
       </div>
     </div>
   {% endif %}
@@ -18,15 +24,16 @@ layout: layouts/base.njk
 
 <h1 class="text-2xl text-center my-20">Previous Episodes</h1>
 
-<div class="flex flex-wrap gap-2 items-start">
+<div class="flex flex-wrap gap-1 w-full">
   {% for episode in episodes %}
     {% if episode.up_next === false %}
-      <div class="rounded-xl w-[250px] h-[300px] mx-auto hover:bg-gradient-to-r from-pink to-orange p-[4px] mt-12">
-        <div class="flex flex-col justify-between h-full bg-gradient-blue-purple text-white rounded-lg p-4">
-          <img src={{ episode.photo }}/>
-          <h1>{{ episode.name }}</h1>
+      <div class="rounded-2xl w-[250px] mx-auto hover:bg-gradient-to-r from-pink to-orange p-[6px] mt-20">
+        <div class="flex flex-col justify-between h-full bg-gradient-blue-purple text-white rounded-2xl p-5">
+          <img class="rounded-full self-center mt-[-86px] w-[140px] h-[140px]" src="{{ episode.photo | removeTrailingSlash }}"/>
+          <h2 class='bg-primary-blue text-center mt-[-25px] rounded-md py-1'>{{ episode.name }}</h2>
           <p>{{ episode.title }}</p>
           <p>{{ episode.topic }}</p>
+          <p>{{episode.when}}</p>
         </div>
       </div>
     {% endif %}

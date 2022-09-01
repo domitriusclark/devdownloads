@@ -1,7 +1,7 @@
 [
   {
     "name": "James Quick",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900727/Developer%20Downloads/james-quick.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900727/Developer%20Downloads/james-quick.png",
     "title": "Fulltime Technical Content Creator",
     "twitter": "@jamesqquick",
     "topic": "Building Community & Creating content",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Rebecca Newton",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900736/Developer%20Downloads/rebecca-newton.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900736/Developer%20Downloads/rebecca-newton.png",
     "title": "Google Women Techmakers Ambassador & Front End Developer",
     "twitter": "@hellobexnewton",
     "topic": "Navigating a career change to tech while being a mother",
@@ -19,7 +19,7 @@
   },
   {
     "name": "James Perkins",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900748/Developer%20Downloads/james-perkins.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900748/Developer%20Downloads/james-perkins.png",
     "title": "Sr. Developer Advocate @ Clerk & Youtuber",
     "twitter": "@james_r_perkins",
     "topic": "Importance of Sot Skills - DevRel - Content Creation",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Rizèl Scarlett",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900755/Developer%20Downloads/rizel.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900755/Developer%20Downloads/rizel.png",
     "title": "Developer Advocate @ Github",
     "twitter": "@blackgirlbytes",
     "topic": "OSS - The Struggles of being in tech - Early Career Developers",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Colby Fayock",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900764/Developer%20Downloads/colby.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900764/Developer%20Downloads/colby.png",
     "title": "Senior DXE @ Cloudinary",
     "twitter": "@colbyfayock",
     "topic": "Serverless ecomm & media using Next.js",
@@ -46,7 +46,7 @@
   },
   {
     "name": "Shaundai Person",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900782/Developer%20Downloads/shaundai.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900782/Developer%20Downloads/shaundai.jpg",
     "title": "Senior Software Engineer @ Netflix",
     "twitter": "@shaundai",
     "topic": "Content and course creation",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Lynn Fisher",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661901760/Developer%20Downloads/lynn.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661901760/Developer%20Downloads/lynn.jpg",
     "title": "Staff Designer @ Netlify",
     "twitter": "@lynnandtonic",
     "topic": "Collaboration between devs and designers + having fun with CSS",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Bryan Robinson",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900872/Developer%20Downloads/brob.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900872/Developer%20Downloads/brob.jpg",
     "title": "DevRel",
     "twitter": "@brob",
     "topic": "Developer Communities - Content Creation - Static Sites",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Zachary Przybilski",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900730/Developer%20Downloads/zach-przy.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900730/Developer%20Downloads/zach-przy.jpg",
     "title": "Frontend Engineer for Hire",
     "twitter": "@tweetzachback",
     "topic": "The journey of a self taught engineer",
@@ -82,7 +82,7 @@
   },
   {
     "name": "Salma Alam-Naylor",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661901069/Developer%20Downloads/salma.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661901069/Developer%20Downloads/salma.jpg",
     "title": "Staff DXE @ Netlify",
     "twitter": "@whitep4nth3r",
     "topic": "How writing music is exactly like writing code",
@@ -91,7 +91,7 @@
   },
   {
     "name": "Will Johnson",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900794/Developer%20Downloads/will.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900794/Developer%20Downloads/will.jpg",
     "title": "Developer Advocate @ Auth0",
     "twitter": "@willjohnsonio",
     "topic": "Succeeding in your first DevRel role",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Sia Karamalegos",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900799/Developer%20Downloads/sia.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900799/Developer%20Downloads/sia.jpg",
     "title": "Merchant Web Performance @ Shopify",
     "twitter": "@TheGreenGeek",
     "topic": "Web perf - 11ty & The Jamstack - Owning your content",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Joe Previte",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661900769/Developer%20Downloads/joeprev.png",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661900769/Developer%20Downloads/joeprev.png",
     "title": "OSS Typescript Engineer @ Coder",
     "twitter": "@jsjoeio",
     "topic": "Typescript in the Jamstack + OSS",
@@ -118,7 +118,7 @@
   },
   {
     "name": "Mehdi Vasigh",
-    "photo": "https://res.cloudinary.com/treasurechest/image/upload/v1661901834/Developer%20Downloads/mehdi.jpg",
+    "photo": "https://res.cloudinary.com/treasurechest/image/upload/f_auto,q_auto,c_thumb/v1661901834/Developer%20Downloads/mehdi.jpg",
     "title": "Software Engineer @ Google",
     "twitter": "@mehdi_vasigh",
     "topic": "What it takes to become a Senior Engineer",
