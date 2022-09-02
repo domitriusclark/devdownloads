@@ -5,17 +5,24 @@ layout: layouts/base.njk
 
 {% for episode in episodes %}
   {% if episode.up_next === true %}
-    <div class="rounded-xl w-full h-[480px] mx-auto bg-border-gradient-pink-orange p-[18px] mt-12 overflow-hidden">
+    <div class="rounded-xl w-full lg:min-w-[700px] h-[420px] mx-auto bg-border-gradient-pink-orange p-[20px] mt-12 overflow-hidden font-black">
       <div class="wrapper">
-        <div class="left flex-col pr-[10%]">
-          <p>{{ episode.topic }}</p>
-          <p>{{ episode.when }}</p>
+        <div class="left flex-col">
+          <img class="w-[50%] mb-3" src="/img/dd_logo_2.png" />
+          <div class="w-[50%]">            
+            <p class="text-2xl font-dark">Collaboration between devs and designers + having fun with CSS</p>
+            <p class="mt-3 text-orange capitalize">{{ episode.when }}</p>
+          </div>
+          <div>
+            <p>Hosted By Domitrius Clark</p>
+            <p class="text-discord-blue">discord.gg/jamstack</p>
+          </div>
         </div>
-        <div class="right flex-col pl-[25%]">
-          <img class="rounded-full w-[40%]" src="{{ episode.photo | removeTrailingSlash }}"/>
-          <h1 class="bg-pink px-12 py-3 mt-[-32px]">{{ episode.name }}</h1>
-          <p class="">{{ episode.title }}</p>
-          <p>{{episode.twitter}}</p>
+        <div class="right flex-col">
+          <img class="rounded-full w-[35%]" src="{{ episode.photo | removeTrailingSlash }}"/>
+          <h1 class="bg-pink px-12 py-3 mt-[-32px] font-["ITC Avant Garde Gothic Pro"]">{{ episode.name }}</h1>
+          <p class="font-medium leading-10">{{ episode.title }}</p>
+          <p class="text-green-accent">{{episode.twitter}}</p>
         </div>
       </div>
     </div>
