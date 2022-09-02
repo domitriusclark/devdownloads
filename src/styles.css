@@ -12,10 +12,6 @@ button {
   font-size: .9rem;
 }
 
-.heading-text {
-  color: #9ba5b6;
-}
-
 .bg-gradient-pink-orange,
 .hover\:bg-gradient-pink-orange:hover,
 .hover\:bg-gradient-pink-orange:focus {
@@ -47,7 +43,6 @@ button {
   @apply bg-primary-blue;
   height: 100%;
   clip-path: polygon(0% 0, 60% 0, 35% 100%, 0% 100%);
-  /* clip-path: polygon(10% 0, 100% 0, 50% 100%, 10% 100%); */
   flex: 1 0 100%;
   transform: translateX(25%);
   display: flex;
@@ -59,7 +54,6 @@ button {
   @apply bg-primary-blue;
   height: 100%;
   clip-path: polygon(61% 0, 100% 0, 100% 100%, 36% 100%);
-  /* clip-path: polygon(50% 0, 92% 0, 92% 100%, 0% 100%); */
   flex: 1 0 100%;
   transform: translateX(-76%);
   display: flex;
@@ -67,13 +61,3 @@ button {
   justify-content: center;
   margin-left: 10px;
 }
-
-/* .left .text {
-  width:50%;
-  padding-left: 10%;
-}
-
-.right .text {
-  width:50%;
-  padding-right: 10%;
-} */
