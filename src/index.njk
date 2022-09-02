@@ -5,7 +5,21 @@ layout: layouts/base.njk
 
 {% for episode in episodes %}
   {% if episode.up_next === true %}
-    <div class="rounded-xl w-full lg:min-w-[700px] h-[520px] mx-auto bg-border-gradient-pink-orange p-[24px] mt-12 overflow-hidden font-black">
+    {# MOBILE #}
+    <div class="rounded-2xl block sm:hidden w-full mx-auto h-auto p-[6px] mt-32">
+      <div class="flex flex-col space-around h-full bg-gradient-pink-orange text-white rounded-2xl p-7">
+        <img class="rounded-full self-center mt-[-92px] w-[200px] h-[200px]" src="{{ episode.photo | removeTrailingSlash }}"/>
+        <h2 class='bg-primary-blue text-center mt-[-32px] rounded-md py-3'>{{ episode.name }}</h2>
+        <span class="mt-4">
+          <p class="font-medium text-md">{{ episode.title }}</p>
+          <p class="text-green-accent">{{episode.twitter}}</p>
+        </span>
+        <p class="font-black text-2xl mt-8">{{ episode.topic }}</p>
+        <p class="mt-8 justify-self-end">{{episode.when}}</p>
+      </div>
+    </div>
+    {# TABLET AND UP #}
+    <div class="rounded-xl hidden md:block w-full lg:min-w-[700px] h-[540px] 3xl:h-[640px] mx-auto bg-border-gradient-pink-orange p-[24px] mt-12 overflow-hidden font-black">
       <div class="wrapper">
         <div class="left flex-col">
           <img class="w-[40%] mb-3" src="/img/dd_logo_2.png"/>
@@ -26,6 +40,7 @@ layout: layouts/base.njk
         </div>
       </div>
     </div>
+
   {% endif %}
 {% endfor %}
 
