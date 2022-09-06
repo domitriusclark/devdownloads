@@ -48,6 +48,7 @@ layout: layouts/base.njk
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-3">
   {% for episode in episodes %}
     {% if episode.up_next === false %}
+    <a class="" href="{{ "/episodes/" + episode.name | cleanUrl }}">
       <div class="rounded-2xl w-full mx-auto h-auto bg-gradient-to-r from-pink to-orange hover:from-[#0760e5] hover:to-[#fc4aea] p-[6px] mt-20">
         <div class="flex flex-col space-around h-full bg-primary-blue  text-white rounded-2xl p-7">
           <img class="rounded-full self-center mt-[-92px] w-[200px] h-[200px]" src="{{ episode.photo | removeTrailingSlash }}"/>
@@ -60,6 +61,7 @@ layout: layouts/base.njk
           <p class="text-sm mt-8 justify-self-end">{{episode.when}}</p>
         </div>
       </div>
+      </a>
     {% endif %}
   {% endfor %}
 </div>

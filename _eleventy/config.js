@@ -2,19 +2,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");
 
   eleventyConfig.addFilter("removeTrailingSlash", function (url) {
+    return url.replace(/\/+$/, "");
+  });
 
-    console.log("RUNNING removeTrailingSlash");
-    return url.replace(/\/+$/, '');
-  })
+  eleventyConfig.addFilter("cleanUrl", function (url) {
+    // write a clean url function
+    return url.toLowerCase().replace(/[^a-z0-9]+/, "-");
+  });
 
   return {
-    templateFormats: ['njk'],
+    templateFormats: ["njk"],
     dir: {
       input: "src",
       output: "dist",
-      includes: "_includes"
+      includes: "_includes",
     },
     htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk"
-  }
-}
+    dataTemplateEngine: "njk",
+  };
+};
