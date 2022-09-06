@@ -49,10 +49,10 @@ layout: layouts/base.njk
   {% for episode in episodes %}
     {% if episode.up_next === false %}
     <a class="" href="{{ "/episodes/" + episode.name | cleanUrl }}">
-      <div class="rounded-2xl w-full mx-auto h-auto bg-gradient-to-r from-pink to-orange hover:from-[#0760e5] hover:to-[#fc4aea] p-[6px] mt-20">
-        <div class="flex flex-col space-around h-full bg-primary-blue  text-white rounded-2xl p-7">
+      <div class="group rounded-2xl w-full mx-auto h-auto bg-gradient-to-r from-pink to-orange p-[6px] mt-20 hover:translate-y-[-10px] ease-in-out duration-150">
+        <div class="flex flex-col space-around h-full bg-primary-blue hover:bg-gradient-pink-orange  text-white rounded-2xl p-7">
           <img class="rounded-full self-center mt-[-92px] " src="{{ episode.photo | removeTrailingSlash }}"/>
-          <h2 class='bg-pink text-center mt-[-32px] rounded-md py-3'>{{ episode.name }}</h2>
+          <h2 class='bg-pink group-hover:bg-primary-blue text-center mt-[-32px] rounded-md py-3'>{{ episode.name }}</h2>
           <span class="mt-4">
             <p class="font-medium text-sm">{{ episode.title }}</p>
             <p class="text-sm text-green-accent">{{episode.twitter}}</p>
