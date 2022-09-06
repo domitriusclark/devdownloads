@@ -19,12 +19,11 @@ layout: layouts/base.njk
       </div>
     </div>
     {# TABLET AND UP #}
-    <div class="rounded-xl hidden md:block w-full lg:min-w-[700px] h-[420px] lg:h-[540px] 3xl:h-[720px] mx-auto bg-border-gradient-pink-orange p-[12px] lg:p-[24px] 3xl:p-[36px] mt-12 overflow-hidden font-black">
-      <div class="wrapper">
-        <div class="left flex-col gap-[42px] lg:gap-[75px] 3xl:gap-[100px] p-6 lg:p-16">
-          <img class="w-[50%] lg:w-[40%] mb-3" src="/img/dd_logo_2.png"/>
-          <div class="w-[40%] lg:w-[30%]">
-            <p class="text-2xl 3xl:text-4xl font-dark">{{ episode.topic}}</p>
+    <div class="rounded-xl hidden md:block w-full lg:min-w-[700px] h-[420px] 2xl:h-[540px] 3xl:h-[720px] mx-auto bg-border-gradient-pink-orange p-[12px] lg:p-[24px] xl:p-[18px] 3xl:p-[36px] mt-12 xl:mt-8 2xl:mt-12 overflow-hidden font-black">
+      <div class="w-full h-full flex translate-x-[-24%]">
+        <div class="left bg-primary-blue h-full flex items-start ml-[-10px] flex-col gap-[42px] md:gap-[80px] lg:gap-[95px] xl:gap-[90px] 2xl:gap-[180px] 3xl:gap-[220px] p-6 lg:p-16 xl:p-10 2x:p-16">
+          <div class="w-[40%] lg:w-[30%] xl:w-[50%]">
+            <p class="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-dark">{{ episode.topic }}</p>
             <p class="mt-3 text-orange capitalize">{{ episode.when }}</p>
           </div>
           <div class="mt-6">
@@ -32,9 +31,9 @@ layout: layouts/base.njk
             <p class="text-discord-blue">discord.gg/jamstack</p>
           </div>
         </div>
-        <div class="right flex-col pr-10 lg:pr-24">
-          <img class="rounded-full w-[35%] lg:w-[30%]" src="{{ episode.photo | removeTrailingSlash }}"/>
-          <h1 class="bg-pink text-xl 3xl:text-3xl px-4 lg:px-16 3xl:px-18 py-2 lg:py-5 mt-[-32px]">{{ episode.name }}</h1>
+        <div class="right bg-primary-blue h-full flex items-end justify-center ml-[10px] flex-col pr-10 lg:pr-24 xl:pr-10">
+          <img class="rounded-full w-[35%] lg:w-[30%] xl:w-[25%] 2xl:w-[30%]" src="{{ episode.photo | removeTrailingSlash }}"/>
+          <h1 class="bg-pink text-xl 3xl:text-3xl px-4 lg:px-16 xl:px-4 2xl:px-16 3xl:px-18 py-2 lg:py-5 xl:py-3 mt-[-32px]">{{ episode.name }}</h1>
           <p class="font-medium leading-10 mr-4 3xl:mr-0">{{ episode.title }}</p>
           <p class="text-green-accent mr-4 3xl:mr-0">{{episode.twitter}}</p>
         </div>
@@ -49,16 +48,16 @@ layout: layouts/base.njk
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-3">
   {% for episode in episodes %}
     {% if episode.up_next === false %}
-      <div class="rounded-2xl w-full mx-auto h-auto hover:bg-gradient-to-r from-pink to-orange p-[6px] mt-20">
-        <div class="flex flex-col space-around h-full bg-gradient-blue-purple text-white rounded-2xl p-7">
+      <div class="rounded-2xl w-full mx-auto h-auto bg-gradient-to-r from-pink to-orange hover:from-[#0760e5] hover:to-[#fc4aea] p-[6px] mt-20">
+        <div class="flex flex-col space-around h-full bg-primary-blue  text-white rounded-2xl p-7">
           <img class="rounded-full self-center mt-[-92px] w-[200px] h-[200px]" src="{{ episode.photo | removeTrailingSlash }}"/>
-          <h2 class='bg-primary-blue text-center mt-[-32px] rounded-md py-3'>{{ episode.name }}</h2>
+          <h2 class='bg-pink text-center mt-[-32px] rounded-md py-3'>{{ episode.name }}</h2>
           <span class="mt-4">
-            <p class="font-medium text-md">{{ episode.title }}</p>
-            <p class="text-green-accent">{{episode.twitter}}</p>
+            <p class="font-medium text-sm">{{ episode.title }}</p>
+            <p class="text-sm text-green-accent">{{episode.twitter}}</p>
           </span>
-          <p class="font-black text-2xl mt-8">{{ episode.topic }}</p>
-          <p class="mt-8 justify-self-end">{{episode.when}}</p>
+          <p class="font-black text-3xl mt-8">{{ episode.topic }}</p>
+          <p class="text-sm mt-8 justify-self-end">{{episode.when}}</p>
         </div>
       </div>
     {% endif %}
