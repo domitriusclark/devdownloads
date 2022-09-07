@@ -6,7 +6,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("cleanUrl", function (url) {
-    // write a clean url function
     return url.toLowerCase().replace(/[^a-z0-9]+/, "-");
   });
 
